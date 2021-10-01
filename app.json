@@ -1,6 +1,6 @@
 {
-    "name": "GPlink_Bot",
-    "description": "Make short link by using GPlink API key",
+    "name": "sf-url-shortlink-Bot",
+    "description": "Make short link by using onsafelink API key",
     "keywords": [
         "telegram",
         "gplink"
@@ -10,19 +10,20 @@
     "env": {
         "BOT_TOKEN": {
             "description": "Your bot token",
-            "value": ""
+            "value": "1995644549:AAGo9TngCM6GFCA8j9GE4vajdIknFRWCtCg",
         },
         "API_ID": {
             "description": "Get this value from https://my.telegram.org",
-            "value": ""
+            "value": "8635018",
         },
         "API_HASH": {
             "description": "Get this value from https://my.telegram.org",
-            "value": ""
+            "value": "fa859b0bc1b97f38272a4cf8d8050fd2",
         },
         "API_KEY": {
-            "description": "Get API key from https://gplinks.in/member/tools/api",
-            "required": false
+            "description": "Get API key from https://onsafelinks.com/member/tools/api",
+            "value": "2e182f5c6f7711522fabf0cb65f6ceccef49f9e1",
+            "required": true
         }
     },
     "addons": [],
