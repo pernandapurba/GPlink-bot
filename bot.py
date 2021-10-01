@@ -5,7 +5,7 @@ from pyrogram import Client, filters
 API_ID = environ.get('API_ID')
 API_HASH = environ.get('API_HASH')
 BOT_TOKEN = environ.get('BOT_TOKEN')
-API_KEY = environ.get('API_KEY', '2e182f5c6f7711522fabf0cb65f6ceccef49f9e1')
+API_KEY = environ.get('API_KEY', '51063c061d64a6f0bfce19eb8f21511a9c78ea7d')
 
 bot = Client('gplink bot',
              api_id=API_ID,
@@ -33,7 +33,7 @@ async def link_handler(bot, message):
 
 
 async def get_shortlink(link):
-    url = 'https://onsafelink.com/api'
+    url = 'https://gplinks.in/api'
     params = {'api': API_KEY, 'url': link}
 
     async with aiohttp.ClientSession() as session:
