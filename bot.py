@@ -19,7 +19,7 @@ bot = Client('gplink bot',
 async def start(bot, message):
     await message.reply(
         f"**Hi {message.chat.first_name}!**\n\n"
-        "I'm SF URL Shortlink Bot. Kirim link dan dapatkan shortlink")
+        "I'm SF Shortlink Bot. Kirim link dan dapatkan shortlink")
 
 
 @bot.on_message(filters.regex(r'https?://[^\s]+') & filters.private)
