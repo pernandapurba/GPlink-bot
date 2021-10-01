@@ -27,7 +27,7 @@ async def link_handler(bot, message):
     link = message.matches[0].group(0)
     try:
         short_link = await get_shortlink(link)
-        await message.reply(f'Ini Linknya [short link]({short_link})', quote=True)
+        await message.reply(f'Ini Linknya [short link]({short_link}) \n\nKlik [Disini](https://gplinks.in/ref/apanyaclay) jika {message.chat.first_name} mau membuat akun shortlink', quote=True)
     except Exception as e:
         await message.reply(f'Error: {e}', quote=True)
 
